@@ -24,22 +24,22 @@
 		var is_mobile = window.mobileCheck()
 	</script>
 	<script>
-		var x = document.getElementById("myButton")
-		x.style.visibility = 'hidden'
-	</script>
-	<script>
 			function showFunction(){
 				if (is_mobile) {
   				document.getElementById("myButton").style.visibility = 'visible';
   	 			}
   	 			else{}
   	 		}
-  			showFunction()
 	</script>
 </head>
 <body>
 	<button onclick= "openFunction()" id="myButton">Click me 
 	</button>
+	<script>
+		var x = document.getElementById("myButton")
+		x.style.visibility = 'hidden'
+		showFunction()
+	</script>
 	<center>
 		<table width="1370" border= '0' style="background-color: #00C1FF; margin-top: -10px; margin-left: -10px">
 			<tr>
